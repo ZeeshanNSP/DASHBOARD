@@ -1,0 +1,7 @@
+C:\Users\HP\Desktop\Dashboard Code\NV200_Dashboard\NV200_Dashboard\obj\Release\net6.0\PubTmp\Out\NV200_Dashboard.exe
+C:\Users\HP\Desktop\Dashboard Code\NV200_Dashboard\NV200_Dashboard\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\HP\Desktop\Dashboard Code\NV200_Dashboard\NV200_Dashboard\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\HP\Desktop\Dashboard Code\NV200_Dashboard\NV200_Dashboard\obj\Release\net6.0\PubTmp\Out\NV200_Dashboard.dll
+C:\Users\HP\Desktop\Dashboard Code\NV200_Dashboard\NV200_Dashboard\obj\Release\net6.0\PubTmp\Out\NV200_Dashboard.deps.json
+C:\Users\HP\Desktop\Dashboard Code\NV200_Dashboard\NV200_Dashboard\obj\Release\net6.0\PubTmp\Out\NV200_Dashboard.runtimeconfig.json
+C:\Users\HP\Desktop\Dashboard Code\NV200_Dashboard\NV200_Dashboard\obj\Release\net6.0\PubTmp\Out\NV200_Dashboard.pdb

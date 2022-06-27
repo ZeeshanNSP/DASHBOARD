@@ -18,7 +18,15 @@ const GetSortOrder = (prop) => {
         }
         return 0;
     }
-}    
+}  
+const isIn = (key, arr) => {
+    for (i in arr) {
+        if (key == arr[i]) {
+            return true;
+        }
+    }
+    return false
+}
 const getDates = (differ = 30) => {
     const date = new Date();
     let year = date.getFullYear()
@@ -81,7 +89,8 @@ const WEATHER_URL_END_POINT = "https://api.openweathermap.org/data/2.5/weather?q
 const CASH_TIME_OUT = 15000;
 const API_KEY = GENERATE_API()
 const SITE_ID = "329"
-const DATES = getDates()
+const DATES = getDates() 
+const ALLOWED_SERVICES = ["jwp"]
 const GET_PROFILES_END_POINT = `https://protik.ae/jwp_api_official/home/get_profiles/${SITE_ID}/${API_KEY}`;
 const GET_USER_END_POINT = `https://protik.ae/jwp_api_official/home/search_user/${API_KEY}?term=`;
 const GET_SITE_ACTIVATIONS_END_POINT = `http://protik.ae/jwp_api_official/home/activations/${SITE_ID}/${API_KEY}/${DATES["from"]}/${DATES["to"]}`

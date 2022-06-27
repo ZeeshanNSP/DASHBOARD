@@ -47,11 +47,16 @@
                $.get(GET_PROFILES_END_POINT, function (data) {
                //    $("#plans").html(`<h2 class="pulsate text-light">Loading Plans Please Wait...</h2>`)
         d = JSON.parse(data)
- 
+ if(d.length > 10){
+      //   margin-top: -5%;
+    //transform: scale(0.9);
+     $(".container").css("margin-top", "-5% !important");
+     $(".container").css("transform","scale(0.9) !important")
+ }
      for(i in d){
         plan = d[i]
        
-        let html =`<div data-profile-name="${plan['profile_name']}" data-validity="${plan['profile_validity']}" data-price="${plan['profile_price']}" class="plan card col-2 m-1"  style="background-image: repeating-linear-gradient(to right,red, yellow);">
+        let html =`<div data-profile-name="${plan['profile_name']}" data-validity="${plan['profile_validity']}" data-price="${plan['profile_price']}" class="plan card col-2 m-1"  style="background-image: repeating-linear-gradient(to right,purple, blue);">
     <div class="card-body">
       <h4 class="card-title h1">${plan['profile_price']} AED</h4>
       <p class="card-text">Validity : ${plan['profile_validity'].replace("d","").trim()} days</p>

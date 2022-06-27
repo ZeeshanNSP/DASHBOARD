@@ -22,7 +22,7 @@ html {
     border: none;
     margin-top: 30% !important;
     margin-left: -40% !important;
-    font-size: 7rem;
+    font-size: 6rem;
     font-family:'Agency FB';
     border-top-left-radius: 30px !important;
     border-top-right-radius: 30px !important;
@@ -113,7 +113,7 @@ body {
     border: none;
     background: #198754;
     margin-top: 20%;
-    margin-right:-19%;
+    margin-right:-240px;
    
 }
 
@@ -132,9 +132,9 @@ body {
     width: 200px !important;
     border-radius: 50%;
     border: none;
-    background: #dc3545;
+    background: #dcbf45;
     margin-top: 20%;
-    margin-left: -19%;
+    margin-left: -240px;
 }
     .back-button:hover {
         background: #E77883;

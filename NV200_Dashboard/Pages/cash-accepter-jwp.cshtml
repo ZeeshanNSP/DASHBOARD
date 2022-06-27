@@ -68,34 +68,15 @@
     var remBal =  m-n
     function enableNV (){
         
-        $.get("https://10.39.13.49:443/jwp-money",function(Data){
-               $("#currency").text(Data)
-               total_balance += parseFloat(Data)
-                $("#balance").text(total_balance);
-                  m = parseFloat($("#mon").text())
-     n = parseFloat($("#balance").text())
-     remBal =  m-n
-             
-               if (total_balance >= parseFloat($("#mon").text()) || remBal <= 0) {
-                       $.get("https://10.39.13.49:443/disable-biller",function(data,status){
-                           })
-                            $.get("https://10.39.13.49:443/disable-biller",function(data,status){
-                            })
-                   $(".next-button").click()
-               }
-               else{
-                           
-                   setTimeout(enableNV(),1000)
 
-               }
-               setTimeout(() => {
+
+         const req_timeout = setTimeout(() => {
                             $.get("https://10.39.13.49:443/disable-biller",function(data,status){
                            })
-                            $.get("https://10.39.13.49:443/disable-biller",function(data,status){
-                            })
                             let d = JSON.parse(localStorage.getItem("obj"))
                             let acc  = parseFloat($("#balance").text())
                             let t = parseFloat($("#mon").text())
+                             console.log("TIMED OUT");
                             let rm = t- acc
                             d["amount"] = acc
                             d["remaining"] = rm
@@ -103,9 +84,39 @@
                             d["terminal"] = SITE_ID
                             localStorage.setItem("obj",JSON.stringify(d))
                             window.location.href = "/timeout";
+                           
+                            
+                           
                         }, CASH_TIME_OUT);
+
+
+        $.get("https://10.39.13.49:443/jwp-money",function(Data){
+               $("#currency").text(Data)
+               total_balance += parseFloat(Data)
+                $("#balance").text(total_balance);
+                  m = parseFloat($("#mon").text())
+     n = parseFloat($("#balance").text())
+     remBal =  m-n
+             clearTimeout(req_timeout);
+              console.log("TIMED CLEARED");
+               if (total_balance >= parseFloat($("#mon").text()) || remBal <= 0) {
+                       $.get("https://10.39.13.49:443/disable-biller",function(data,status){
+                        
+                      
+                       })
+                        $(".next-button").click()   
+                            
+                
+               }
+               else{
+                           
+                   setTimeout(enableNV(),500)
+
+               }
+              
             
            })
+           
 
        
         
