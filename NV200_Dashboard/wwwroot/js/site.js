@@ -95,6 +95,7 @@ const GET_PROFILES_END_POINT = `https://protik.ae/jwp_api_official/home/get_prof
 const GET_USER_END_POINT = `https://protik.ae/jwp_api_official/home/search_user/${API_KEY}?term=`;
 const GET_SITE_ACTIVATIONS_END_POINT = `http://protik.ae/jwp_api_official/home/activations/${SITE_ID}/${API_KEY}/${DATES["from"]}/${DATES["to"]}`
 const VOUCHER_GENERATE_END_POINT = `https://protik.ae/jwp_api_official/home/live_sale/${SITE_ID}/${API_KEY}/`
+const ADD_PENDING_AMOUNT_END_POINT = `https://protik.ae/jwp_api_dev/home/add_pending_amount/${SITE_ID}/${API_KEY}/`;
 $(document).ready(() => {
 
    
@@ -203,7 +204,9 @@ $(document).ready(() => {
                     let post_data = {
                         "code": data["code"],
                         "profile": previous_json["plan"]["profile"],
-                        "site": SITE_DATA[SITE_ID]["initial"]
+                        "phone": previous_json["number"],
+                        "site": SITE_DATA[SITE_ID]["initial"],
+                        "amount":previous_json["plan"]["price"]
                     }
                     $.post("https://10.39.13.49:443/voucherPrint", post_data, (d) => {
                         
