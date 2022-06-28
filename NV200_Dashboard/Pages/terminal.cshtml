@@ -1,0 +1,89 @@
+﻿@page
+@model NV200_Dashboard.Pages.terminalModel
+@{
+    ViewData["title"] = "Terminal Configuration";
+}
+<style>
+    ::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(40,40,40,0.5); 
+}
+   .set{
+      overflow-y:auto !important;
+      max-height:100vh !important;
+      position:relative !important;
+   }
+   body{
+        background:orange !important;
+   }
+ 
+</style>
+
+<div class="container-fluid" >
+    <div class="container p-5 shadow set">
+        <h1 class="heading text-center text-capitalize text-light fw-bold">System Settings</h1>
+           <h3 class="text-light h3 text-capitalize">Status</h3>
+           <div style="margin-left:30px !important">
+           <h4  class="text-light h4 text-capitalize">Biller</h4>
+           <p class="text-light h6 text-capitalize fw-bold">Serial Number : </p>
+           <p class="text-light h6 text-capitalize fw-bold">Counters :    
+               <table  style="margin-left:30px !important" class="table fw-bold text-light h6 text-capitalize">
+                   <tr>
+                       <td>5 AED</td>
+                       <td>0</td>
+                   </tr>
+                       <tr>
+                       <td>5 AED</td>
+                       <td id="p5">0</td>
+                   </tr>
+                   <tr>
+                       <td>10 AED</td>
+                       <td id="p10">0</td>
+                   </tr>
+                       <tr>
+                       <td>20 AED</td>
+                       <td id="p20">0</td>
+                   </tr>
+                       <tr>
+                       <td>50 AED</td>
+                       <td id="p50">0</td>
+                   </tr>
+                       <tr>
+                       <td>100 AED</td>
+                       <td id="p100">0</td>
+                   </tr>
+                       <tr>
+                       <td>200 AED</td>
+                       <td id="p200">0</td>
+                   </tr>
+                       <tr>
+                       <td>500 AED</td>
+                       <td id="p500">0</td>
+                   </tr>
+               </table>
+           </p>
+           <p class="text-light h6 text-capitalize fw-bold">Cashbox: 
+               &nbsp;&nbsp;&nbsp;
+               <div class="led"></div>
+               <button  class="btn btn-light text-dark fw-bold">Open Cashbox</button>
+
+           </p>
+           </div> 
+    </div>
+</div>
