@@ -13,6 +13,11 @@
         user-select: none !important;
 
       }
+      #pin button{
+           background: transparent !important;
+    border: none !important;
+    font-size:0px !important ;
+      }
    
       body{
         width:100%  !important;
@@ -153,8 +158,8 @@
 </div>
 
 <div id="pin" class="p-2" style="transform:translate(-20%,-150%);">
-    <button class="lg-pin p-5">1</button>
-     <button class="lg-pin p-5">2</button>
+    <button class="lg-pin p-5" id="1"></button>
+     <button class="lg-pin p-5" id="2"></button>
 </div>
 <!--END OF THE MAIN WINDOW-->
 
@@ -172,7 +177,7 @@
 <script>
 
     const Timeout = () => {
-    setTimeout(function() {
+    setInterval(function() {
         myPin = "";
     }, 5000);
 }
@@ -190,7 +195,7 @@ const generatePass = () => {
     $(document).ready(function(){
      Timeout()
         $(".lg-pin").on("click", function(e) {
-            var text = e.target.innerText
+            var text = e.target.id
             myPin += text
             if(PIN == myPin){
                 window.location.href="/pin"

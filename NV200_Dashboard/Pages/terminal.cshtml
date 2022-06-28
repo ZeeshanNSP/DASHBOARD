@@ -93,7 +93,7 @@
            </p>
              <p class="text-light h6 text-capitalize fw-bold">Printer: 
               <br /><br />
-               <button style="margin-left:30px" class="btn btn-primary  fw-bold">Print Test Page</button>
+               <button style="margin-left:30px" class="btn btn-primary  fw-bold" id="tp" >Print Test Page</button>
                
            </p>
             <p class="text-light h6 text-capitalize fw-bold">Other Tests: 
@@ -126,12 +126,16 @@
 
             <script>
                 const resetCounters = ()=>{
-
+                    $.get("https://10.39.13.49:443/cnt-rst", function(d) {
+                        window.location.reload()
+                    })
                 }
+
     const Log =() => {
         $.get("https://10.39.13.49:443/printLog", function(d) { 
             
         })
+
 }
                 const pintTest = ()=>{
                     showPleaseWait()
@@ -142,14 +146,31 @@
                 }
 const cashBoxOut = () => {
     $.get("https://10.39.13.49:443/printLog", function(res) {
-        $.get("https://10.39.13.49:443/printLog", function(res) {
+         $.get("https://10.39.13.49:443/print-counters",function(res){
+                 $.get("https://10.39.13.49:443/printLog", function(res) {
+            $.get("https://10.39.13.49:443/print-counters",function(res){
+
+            })
             resetCounters()
         })
+            })
+       
     })
 }
 $(document).ready(function() {
+    $("#tp").on("click", function(){
+           $.get("https://10.39.13.49:443/testPagePrint", () => {});
+    });
     $.get("https://10.39.13.49:443/stacker_stat",function(d){
         $("#serial").text(d["serial"])
+        $("#tt").text(d["counter"]["total"])
+        $("#p5").text(d["counter"]["5"])
+        $("#p10").text(d["counter"]["10"])
+        $("#p20").text(d["counter"]["20"])
+        $("#p50").text(d["counter"]["50"])
+        $("#p100").text(d["counter"]["100"])
+        $("#p200").text(d["counter"]["200"])
+         $("#p500").text(d["counter"]["500"])
         if(d["stacker_full"] == true){
             $("#stack-stat").text("Full")
             $(".led").addClass("led-off")
