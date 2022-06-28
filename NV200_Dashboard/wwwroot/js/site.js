@@ -1,4 +1,9 @@
-﻿const GENERATE_API = () => {
+﻿
+
+
+
+
+const GENERATE_API = () => {
     let now = new Date().toLocaleDateString('en-us', { year: 'numeric', weekday: "short", month: "short" });
     now = now.split(" ")
     year = now[1]

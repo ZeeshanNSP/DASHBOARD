@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ERx4Oer6W+21Ckenn1s+mfLt1pRtFpIoP0ebz+zvTsA=",
+  "Hash": "Y5qjDm3e+ek++6x1U4pfpL0wrFfkgddJpHMb2KxSNFM=",
   "Source": "NV200_Dashboard",
   "BasePath": "_content/NV200_Dashboard",
   "Mode": "Default",
@@ -848,6 +848,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\cash_in.gif"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Dashboard Code\\NV200_Dashboard\\NV200_Dashboard\\wwwroot\\assets\\close.png",
+      "SourceId": "NV200_Dashboard",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Dashboard Code\\NV200_Dashboard\\NV200_Dashboard\\wwwroot\\",
+      "BasePath": "_content/NV200_Dashboard",
+      "RelativePath": "assets/close.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\close.png"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Dashboard Code\\NV200_Dashboard\\NV200_Dashboard\\wwwroot\\assets\\clouds.png",
