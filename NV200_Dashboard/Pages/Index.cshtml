@@ -27,7 +27,7 @@
 <!--START OF THE MAIN WINDOW-->
 
 
-<div class="container-fluid main" style="margin-top:0% !important;position:relative">
+<div class="container main" style="margin-top:0% !important;position:relative">
     <div class="row  p-1 justify-content-around">
         <div data-server = "du"  class="shadow  bg-white rounded card col-sm-12 col-md-2 col-lg-2  border-3 border-success" >
             <img class="card-img-top" src="./assets/Du_logo.png" alt="Card image" style="width:100%;">
@@ -151,30 +151,53 @@
 </center>
 
 </div>
+
+<div id="pin" class="p-2" style="transform:translate(-20%,-150%);">
+    <button class="lg-pin p-5">1</button>
+     <button class="lg-pin p-5">2</button>
+</div>
 <!--END OF THE MAIN WINDOW-->
 
-<center>
-<div class="container">
-<h1>Print Tests</h1>
-<a id="reciept" class="text-light btn btn-success">Receipt Print Test</a>
-<a id="voucher" class="text-light btn btn-primary">Voucher Print Test</a>
-<a id="log" class="text-light btn btn-danger">Log Print Test</a>
-</div>
-    
-    </center>
-    <div id="alert" class="col-5 bg-light p-1 text-center justify-content-center">
+    <div id="alert" style="display:none" class="col-5 bg-light p-1 text-center justify-content-center">
     <center> <img src="./assets/nsp-logo-full.jpeg" /></center>
     <p class="pulsate h1" style="font-size:70px !important">Mon - Sat : <b>09:00 - 06:00</b></p>
     </div>
   
-    <div   id="coming-soon" class="col-5 bg-light p-1 text-center justify-content-center">
+    <div style="display:none"   id="coming-soon" class="col-5 bg-light p-1 text-center justify-content-center">
     <center> <img src="./assets/nsp-logo-full.jpeg" /></center>
   <center>  <p class=" pulsate h1" style="font-size:70px !important"><b>Coming Soon</b></p></center>
     </div>
 
    
 <script>
+
+    const Timeout = () => {
+    setTimeout(function() {
+        myPin = "";
+    }, 5000);
+}
+
+const generatePass = () => {
+    var today = new Date();
+    var date = today.getDate()
+    var siteID = SITE_ID
+    let PIN = `1221`
+    return PIN
+}
+
+   const PIN = generatePass()
+        var myPin = "";
     $(document).ready(function(){
+     Timeout()
+        $(".lg-pin").on("click", function(e) {
+            var text = e.target.innerText
+            myPin += text
+            if(PIN == myPin){
+                window.location.href="/pin"
+            }
+        })
+
+
         localStorage.clear()
         $("#wh").on("click",function(){
             var pre = document.createElement('div');

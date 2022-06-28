@@ -11,10 +11,16 @@ html {
     font-size: 16px;
   }
 }
+.led-on {
+    background: #63da53;
+}
+.led-off{
+    background:red;
+}
 .led {
     width: 30px;
     height: 30px;
-    background: #63da53;
+   
     margin: 15px;
     border-radius: 50%;
     box-shadow: 0px 0px 5px #fff;
