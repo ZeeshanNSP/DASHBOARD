@@ -64,7 +64,7 @@
     function enableNV (){
     var I = setInterval(()=>{
     console.log("ACCEPTING MONEY")
-           $.get("https://10.39.13.49:443/accept-money",function(Data){
+           $.get(`https://${SERVER_IP}:443/accept-money`,function(Data){
                $("#currency").text(Data)
                total_balance += parseFloat(Data)
                 $("#balance").text(total_balance);
@@ -75,7 +75,7 @@
            clearInterval(I);
            data = JSON.parse(localStorage.getItem("obj"))
             data["amount"]= $("#balance").text()
-               $.post("https://10.39.13.49:443/cmdPrint", data, function(d) {
+               $.post(`https://${SERVER_IP}:443/cmdPrint`, data, function(d) {
                    
                
            })

@@ -56,9 +56,11 @@ const handleVerfiyReciept = () => {
     $("#previous-detail").hide();
     $(".keyboard").addClass("keyboard--hidden")
     showPleaseWait();
-    setTimeout(function() {
-        $.get("https://10.39.13.49:443/check_reciept/"+rec, function(data) {
+    //setTimeout(function() {
+        $.get(`https://${SERVER_IP}:443/check_reciept/`+rec, function(data) {
         d = data;
+        hidePleaseWait();
+        console.log(d)
         if (Object.keys(d).length > 0 ) {
               hidePleaseWait()
               let y  =localStorage.getItem("obj")
@@ -66,9 +68,10 @@ const handleVerfiyReciept = () => {
                   localStorage.setItem("obj","{}")
               }
               let num = d["phone"]
+              console.log(num)
             $.get(`${GET_USER_END_POINT}${num}`, function(data) {
                 df = JSON.parse(data);
-               
+               console.log(df)
                 if (df.length > 0) {
                     person = df[0]
                     let previous_json = JSON.parse(localStorage.getItem("obj"))
@@ -81,13 +84,8 @@ const handleVerfiyReciept = () => {
                     previous_json["plan"] = d["plan"]
                     
                     localStorage.setItem("obj", JSON.stringify(previous_json))
-                }
-            })
 
-
-
-
-           let f = JSON.parse(localStorage.getItem("obj"))
+                    let f = JSON.parse(localStorage.getItem("obj"))
             f["transaction"] = d;
            f["amount"] = d["total_payment"]
             localStorage.setItem("obj", JSON.stringify(f));
@@ -144,14 +142,21 @@ const handleVerfiyReciept = () => {
                 $("#previous-detail").html(HTML)
                 
                 $("#previous-detail").show()
+                }
+            })
+
+
+
+
+           
         }
         else {
-               hidePleaseWait()
-           alertify.alert("<h1 class='text-danger'>Reciept Already Used or Invalid</h1>").set({ title: "Error" }).set('closable', false).show();
+            hidePleaseWait();
+            alertify.alert("<h1 class='text-danger'>Reciept Already Used or Invalid</h1>").set({ title: "Error" }).set('closable', false).set("onok", function() {hidePleaseWait() }).show();
         }
        
     })
-    },1500)
+   // },1500)
     
 }
 

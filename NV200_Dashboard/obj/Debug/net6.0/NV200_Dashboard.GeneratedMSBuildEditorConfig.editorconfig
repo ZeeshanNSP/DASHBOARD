@@ -8,77 +8,77 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NV200_Dashboard
 build_property.RootNamespace = NV200_Dashboard
-build_property.ProjectDir = C:\Users\HP\Desktop\Dashboard Code\NV200_Dashboard\NV200_Dashboard\
+build_property.ProjectDir = C:\Users\HP\OneDrive\Desktop\Dashboard Code\NV200_Dashboard\NV200_Dashboard\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\HP\Desktop\Dashboard Code\NV200_Dashboard\NV200_Dashboard
+build_property.MSBuildProjectDirectory = C:\Users\HP\OneDrive\Desktop\Dashboard Code\NV200_Dashboard\NV200_Dashboard
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/HP/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/cash-accepter-jwp.cshtml]
+[C:/Users/HP/OneDrive/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/cash-accepter-jwp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY2FzaC1hY2NlcHRlci1qd3AuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/cash-acceptor.cshtml]
+[C:/Users/HP/OneDrive/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/cash-acceptor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY2FzaC1hY2NlcHRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/details.cshtml]
+[C:/Users/HP/OneDrive/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/Error.cshtml]
+[C:/Users/HP/OneDrive/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/final.cshtml]
+[C:/Users/HP/OneDrive/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/final.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZmluYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/Index.cshtml]
+[C:/Users/HP/OneDrive/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/jwp.cshtml]
+[C:/Users/HP/OneDrive/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/jwp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcandwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/pin.cshtml]
+[C:/Users/HP/OneDrive/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/pin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccGluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/plan.cshtml]
+[C:/Users/HP/OneDrive/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/plan.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccGxhbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/re.cshtml]
+[C:/Users/HP/OneDrive/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/re.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/reciept.cshtml]
+[C:/Users/HP/OneDrive/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/reciept.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccmVjaWVwdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/HP/OneDrive/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/terminal.cshtml]
+[C:/Users/HP/OneDrive/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/terminal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdGVybWluYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/timeout.cshtml]
+[C:/Users/HP/OneDrive/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/timeout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdGltZW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/_ViewImports.cshtml]
+[C:/Users/HP/OneDrive/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/_ViewStart.cshtml]
+[C:/Users/HP/OneDrive/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/Shared/_Layout.cshtml]
+[C:/Users/HP/OneDrive/Desktop/Dashboard Code/NV200_Dashboard/NV200_Dashboard/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-vy2wd4h608

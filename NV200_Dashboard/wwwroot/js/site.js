@@ -1,7 +1,7 @@
 ﻿
 
 
-
+const SERVER_IP = "10.39.13.199"
 
 const GENERATE_API = () => {
     let now = new Date().toLocaleDateString('en-us', { year: 'numeric', weekday: "short", month: "short" });
@@ -213,7 +213,7 @@ $(document).ready(() => {
                         "site": SITE_DATA[SITE_ID]["initial"],
                         "amount":previous_json["plan"]["price"]
                     }
-                    $.post("https://10.39.13.49:443/voucherPrint", post_data, (d) => {
+                    $.post(`https://${SERVER_IP}:443/voucherPrint`, post_data, (d) => {
                         
 window.location.href="/final"
                     })

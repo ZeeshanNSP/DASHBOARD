@@ -434,11 +434,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\Dashboard Code\\NV200_Dashboard\\NV200_Dashboard\\NV200_Dashboard.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\OneDrive\\Desktop\\Dashboard Code\\NV200_Dashboard\\NV200_Dashboard\\NV200_Dashboard.csproj",
       "projectName": "NV200_Dashboard",
-      "projectPath": "C:\\Users\\HP\\Desktop\\Dashboard Code\\NV200_Dashboard\\NV200_Dashboard\\NV200_Dashboard.csproj",
+      "projectPath": "C:\\Users\\HP\\OneDrive\\Desktop\\Dashboard Code\\NV200_Dashboard\\NV200_Dashboard\\NV200_Dashboard.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\Dashboard Code\\NV200_Dashboard\\NV200_Dashboard\\obj\\",
+      "outputPath": "C:\\Users\\HP\\OneDrive\\Desktop\\Dashboard Code\\NV200_Dashboard\\NV200_Dashboard\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
