@@ -1,7 +1,7 @@
 ﻿
 
 
-const SERVER_IP = "10.39.13.199"
+const SERVER_IP = "10.39.13.199";
 
 const GENERATE_API = () => {
     let now = new Date().toLocaleDateString('en-us', { year: 'numeric', weekday: "short", month: "short" });
